@@ -5,8 +5,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserComponent } from './components/index';
 
+
 // importat modulo de formulários, angular
 import {FormsModule, ReactiveFormsModule} from  '@angular/forms';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

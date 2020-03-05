@@ -1,8 +1,56 @@
 
 <div class="container">
   <div class="row">
+    <div class="col-12">
+    <h1>
+    Bem vindo, <strong>{{formUser.value.nome}}</strong></h1>
+    </div>
     <div class="col-6">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    <form  [formGroup]="formUser">
+      <div class="form-group">
+        <label for="_id">
+          _id
+        </label>
+        <input class="form-control" type="text" name="_id" formControlName="_id" >
+      </div>
+      <div class="form-group">
+        <label for="nome">
+          Nome
+        </label>
+        <input class="form-control" type="text" name="nome" formControlName="nome" >
+      </div>
+      <div class="form-group">
+        <label for="sobrenome">
+          sobrenome
+        </label>
+        <input class="form-control" type="text" name="sobrenome" formControlName="sobrenome" >
+      </div>
+      <div class="form-group">
+        <label for="email">
+          E-mail
+        </label>
+        <input class="form-control" type="text" name="email" formControlName="email" >
+      </div>
+      <div class="form-group">
+        <label for="telefone">
+          Telefone
+        </label>
+        <input class="form-control" type="text" name="telefone" formControlName="telefone" >
+      </div>
+      <div class="form-group">
+      <button type="button" class="btn" name="button" (click)="salvarUsuario()">
+      enviar
+      </button>
+      </div>
+
+    </form>
+  <code>
+    <pre>
+      {{formUser.value | json}}
+    </pre>
+  </code>
+
+
     </div>
     <div class="col-6">
     </div>
