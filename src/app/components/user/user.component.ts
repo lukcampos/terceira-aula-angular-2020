@@ -13,9 +13,9 @@ export class UserComponent implements OnInit {
       this.formUser = this.formBuilder.group({
          _id: [{value:'123456', disabled:true}],
          nome: [{value:'Lucas', disabled:false}],
-         email:[{value:'luk.campos@hotmail.com',disabled:false}],
+         email:[{value:'teste@gmail.com',disabled:false}],
          sobrenome:[{value:'campos', disabled:false}],
-         telefone:[{value:'+5511959450900',disabled:false}]
+         telefone:[{value:'+897593748543',disabled:false}]
       })
 
       console.log("this.formUser",this.formUser)
